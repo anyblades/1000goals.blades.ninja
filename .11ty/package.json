@@ -5,19 +5,15 @@
   "scripts": {
     "start": "npm run build -- --serve",
     "stage": "rm -r ./_site/ || true && npm run build && serve ./_site/",
-    "build": "eleventy --input=../",
-    "dev": "npm init -w ./packages/subtle -y"
+    "build": "eleventy --input=../"
   },
   "devDependencies": {
     "prettier-plugin-jinja-template": "^2.1.0",
     "serve": "^14.2.5"
   },
   "dependencies": {
-    "@anyblades/subtle": "^0.0.3"
+    "@anyblades/eleventy-blades-base": "^0.2.0"
   },
-  "workspaces": [
-    "packages/subtle"
-  ],
   "=== SITE GLOBALS": "===",
   "site": {
     "title": "Subtle",
