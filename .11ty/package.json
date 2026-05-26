@@ -2,6 +2,7 @@
   "private": true,
   "name": "subtle.blades.ninja",
   "version": "0.1.0",
+  "license": "MIT",
   "type": "module",
   "workspaces": [
     "do"
@@ -16,11 +17,17 @@
     "serve": "^14.2.5"
   },
   "dependencies": {
-    "@anyblades/eleventy-blades-base": "^0.4.1"
+    "@anyblades/eleventy-blades-base": "^0.4.2"
   },
-  "=== SITE GLOBALS": "===",
+  "=== SITE GLOBALS": "=== compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
   "site": {
+    "base": "https://subtle.blades.ninja/",
+    "language": "en",
     "title": "Subtle",
+    "subtitle": "Ultra-lightweight Eleventy-based generator for content-first sites 🥷📝",
+    "author": {
+      "name": "Anton Staroverov"
+    },
     "styles": [
       "/blades.css",
       "https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css"
@@ -30,7 +37,5 @@
       "https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js"
     ]
   },
-  "=== METADATA": "===",
-  "author": "Anton Staroverov",
-  "license": "MIT"
+  "=== UNSORTED": "==="
 }
