@@ -13,16 +13,48 @@ permalink: /
 
 ---
 
-By [literally] hiding inside the `.11ty` subfolder, it declutters the project root for your content.
+By [literally] hiding inside `.11ty` subfolder, it declutters the project root for your content.
 
-Feel the difference: <!-- ... -->
+Feel the difference:
 
-<table class="borderless"><tr><td>
+<table class="borderless">
+<tr>
+  <th><a href="https://github.com/11ty/eleventy-base-blog">eleventy-base-blog</a></th>
+  <th>vs.</th>
+  <th><a href="https://github.com/anyblades/subtle">subtle</a></th>
+</tr>
+<tr><td><!-- $ tree -L 1 -a -F --dirsfirst -I '.git' --noreport | pbcopy -->
 
-https://github.com/11ty/eleventy-base-blog
+```treeview
+├── .github/
+├── _config/
+├── _data/
+├── _includes/
+├── content/
+├── css/
+├── public/
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── .nojekyll
+├── .nvmrc
+├── LICENSE
+├── README.md
+├── eleventy.config.js
+├── netlify.toml
+├── package-lock.json
+├── package.json
+└── vercel.json
+```
 
-</td><td>
+</td><td></td><td>
 
-https://github.com/anyblades/subtle
+```treeview
+├── .11ty/
+├── blog/
+├── LICENSE.md
+├── README.md
+└── netlify.toml
+```
 
 </td></tr></table>
