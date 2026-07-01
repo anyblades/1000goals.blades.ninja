@@ -1,0 +1,8 @@
+base: https://any.blades.ninja
+title: 🥷
+brand: 🥷
+header_links:
+  - url: https://github.com/anyblades/any.blades.ninja
+    title: <i class="fa-solid fa-laptop-code fa-sm faded"></i>
+footer_contents:
+  - Content licensed [CC BY-SA 4.0](//github.com/anyblades/any.blades.ninja/blob/master/content/LICENSE.md).
