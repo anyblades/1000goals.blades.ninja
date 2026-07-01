@@ -21,10 +21,10 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
   #th-goals {
     position: relative;
     &::after {
-      content: "by age:";
+      content: "BY AGE:";
       position: absolute;
-      bottom: 90%;
-      left: 60%;
+      bottom: 80%;
+      left: 100%;
       text-wrap: nowrap;
       font-size: 50%;
     }
