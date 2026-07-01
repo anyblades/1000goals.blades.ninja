@@ -44,8 +44,16 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
 [🇪🇸19]: //en.wikipedia.org/w/index.php?title=Lamine_Yamal&action=raw&section=14
 
 <style>
-  th, td {
-    text-align: center;
-    vertical-align: middle;
+  table {
+    th, td {
+      text-align: center;
+      vertical-align: middle;
+    }
+    code {
+      display: inline;
+      padding-block: 0.25em 0.125em;
+      background: var(--pico-mark-background-color);
+      color: var(--pico-mark-color);
+    }
   }
 </style>
