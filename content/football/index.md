@@ -50,7 +50,7 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
         text-align: right;
       }
       &:nth-child(2n+3) {
-        @media (width < 1024px) { display: none }
+        @media (width < 768px) { display: none }
       }
     }
     code {
