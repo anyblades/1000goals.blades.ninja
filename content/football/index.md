@@ -9,8 +9,8 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
 | Total goals | <big>[`975`][🇵🇹7]</big> <small>🌐10</small>       | <big>[917][🇦🇷10]</big> <small>🌐19</small>     | <big>[431][🇫🇷10]</big> <small>🌐18</small> | <big>[357][🇳🇴9]</big> <small>🌐5</small> | <big>[56][🇪🇸19]</big> <small>🌐1</small>       |
 | 1st goal    | 17y 8m <sub style>Sporting CP vs Moreirense</sub> | 17y 10m <sub style>Barcelona vs Albacete</sub> | 17y 2m <sub style>Monaco vs Troyes</sub>   | 16y 9m <sub style>Molde vs Volda</sub>   | `16y 2m` <sub style>Barcelona vs Granada</sub> |
 | By season:  |                                                   |                                                |                                            |                                          |                                                |
-| 1st         | 5 <sup>5</sup>                                    | 1                                              | 1                                          | 4                                        | `9`                                            |
-| 2nd         | 6 <sup>11</sup>                                   | 8 <small>🌐1</small>                           | `26`                                       | 17                                       | 19                                             |
+| 1st         | 5                                                 | 1                                              | 1                                          | 4                                        | `9`                                            |
+| 2nd         | 6                                                 | 8 <small>🌐1</small>                           | `26`                                       | 17                                       | 19                                             |
 | 3rd         | 16                                                | 19                                             | 22 <small>🌐4</small>                      | `44`                                     | 27 <small>🌐1</small>                          |
 | 4th         | 14 <small>🌐1</small>                             | 22                                             | `48`                                       | `47`                                     | 1                                              |
 | 5th         | 29                                                | `40`                                           | 33                                         | 35                                       | ...                                            |
@@ -45,21 +45,15 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
 
 <style>
   table {
-    small {
-      vertical-align: text-top;
-      opacity: 75%;
-    }
-    sup {
-      float: right;
-      top: 1em;
-      opacity: 50%;
-      &::before { content: "= " }
-    }
     code {
       display: inline;
       padding-block: 0.25em 0.125em;
       background: var(--pico-mark-background-color);
       color: var(--pico-mark-color);
+    }
+    small {
+      vertical-align: text-top;
+      opacity: 75%;
     }
   }
 </style>
