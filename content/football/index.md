@@ -6,42 +6,42 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
 
 ---
 
-| Player                    | Cristiano <br>Ronaldo                                |     | Lionel <br>Messi                                       |     | Kylian <br>Mbappé                            |     | Erling <br>Haaland                          |     | Lamine <br>Yamal                                   |     |
-| ------------------------- | ---------------------------------------------------- | --- | ------------------------------------------------------ | --- | -------------------------------------------- | --- | ------------------------------------------- | --- | -------------------------------------------------- | --- |
-| Country #                 | 🇵🇹 #7                                                |     | 🇦🇷 #10                                                 |     | 🇫🇷 #10                                       |     | 🇳🇴 #9                                       |     | 🇪🇸 #19                                             |     |
-| Goals {#row-goals}        | `975` <sub style>~42/y</sub>                         |     | 917 <sub style>~44/y</sub>                             |     | 431 <sub style>~43/y</sub>                   |     | 357 <sub style>~40/y</sub>                  |     | 56 <sub style>~28/y</sub>                          |     |
-| Years played              | 23 <sub style>2002–present</sub>                     |     | 21 <sub style>2005–present</sub>                       |     | 10 <sub style>2016–present</sub>             |     | 9 <sub style>2017–present</sub>             |     | 2 <sub style>2023–present</sub>                    |     |
-| World Cup goals           | 🌐10                                                 |     | `🌐19`                                                 |     | `🌐18`                                       |     | 🌐5                                         |     | 🌐1                                                |     |
-| World Cups won            | — <sub style>of 6</sub>                              |     | `🏆1` <sub style>of 6</sub>                            |     | `🏆1` <sub style>of 3</sub>                  |     | — <sub style>of 1</sub>                     |     | — <sub style>of 1</sub>                            |     |
-| Golden Shoes              | <i>👟</i>4                                           |     | <code><i>👟</i>6</code>                                |     | <i>👟</i>1                                   |     | <i>👟</i>1                                  |     | —                                                  |     |
-| Ballons d'Or              | <i>⚽️</i>5                                           |     | <code><i>⚽️</i>8</code>                                |     | —                                            |     | —                                           |     | —                                                  |     |
-| 1st goal                  | 17y 8m <sub style>Sporting vs<br> Moreirense</sub>   |     | 17y 10m <sub style>Barcelona <br>vs Albacete</sub>     |     | 17y 2m <sub style>Monaco <br>vs Troyes</sub> |     | 16y 9m <sub style>Molde <br>vs Volda</sub>  |     | `16y 2m` <sub style>Barcelona <br>vs Granada</sub> |     |
-| By season: {#row-seasons} |                                                      |     |                                                        |     |                                              |     |                                             |     |                                                    |     |
-| 1st                       | 5 {data-y=2002}                                      | 5   | 1 {data-y=2004}                                        | 1   | 1 {data-y=2015}                              | 1   | 4 {data-y=2016}                             | 4   | `9` {data-y=2023}                                  | 9   |
-| 2nd                       | 6                                                    | 11  | 8 <sub style>🌐1</sub> {data-y=2006}                   | 9   | `26`                                         | 27  | 17                                          | 21  | 19                                                 | 28  |
-| 3rd                       | 16                                                   | 27  | 19                                                     | 28  | 22 <sub style>🌐4</sub> {data-y=2018}        | 49  | `44`                                        | 65  | 27 <sub style>🌐1</sub> {data-y=2026}              | 55  |
-| 4th                       | 14 <sub style>🌐1</sub> {data-y=2006}                | 41  | 22                                                     | 50  | `48`                                         | 97  | `47`                                        | 112 | 1                                                  | 56  |
-| 5th                       | 29                                                   | 70  | `40` <sub style><i>⚽️</i></sub> {data-y=2009}          | 90  | 33                                           | 130 | 35                                          | 147 |
-| 6th                       | 47 <sub style><i>⚽️</i><i>👟</i></sub> {data-y=2008} | 117 | 50 <sub style><i>⚽️</i><i>👟</i></sub> {data-y=2010}   | 140 | 45                                           | 175 | `61`                                        | 208 |
-| 7th                       | 27                                                   | 144 | `55` <sub style><i>⚽️</i></sub> {data-y=2011}          | 195 | 47 <sub style>🌐8</sub> {data-y=2022}        | 222 | 44 <sub style><i>👟</i></sub> {data-y=2023} | 252 |
-| 8th                       | 34 <sub style>🌐1</sub> {data-y=2010}                | 178 | `77` <sub style><i>⚽️</i><i>👟</i></sub> {data-y=2012} | 272 | 53                                           | 275 | 45                                          | 297 |
-| 9th                       | 56 <sub style><i>👟</i></sub> {data-y=2011}          | 234 | `72` <sub style><i>👟</i></sub> {data-y=2013}          | 344 | 54                                           | 329 | 55                                          | 352 |
-| 10th                      | `67`                                                 | 301 | 47 <sub style>🌐4</sub> {data-y=2014}                  | 391 | 46 <sub style><i>👟</i></sub> {data-y=2025}  | 375 | 5 <sub style>🌐5</sub> {data-y=2026}        | 357 |
-| 11th                      | `60` <sub style><i>⚽️</i></sub> {data-y=2013}        | 361 | `66` <sub style><i>⚽️</i></sub> {data-y=2015}          | 457 | 49 <sub style>🌐6</sub> {data-y=2026}        | 424 |
-| 12th                      | `61` _*⚽️👟*🌐1_ {data-y=2014}                       | 422 | 45                                                     | 502 | 7                                            | 431 |
-| 13th                      | `66` <sub style><i>👟</i></sub> {data-y=2015}        | 488 | `62` <sub style><i>👟</i></sub> {data-y=2017}          | 564 |
-| 14th                      | `54` <sub style><i>⚽️</i></sub> {data-y=2016}        | 542 | `49` <sub style><i>👟</i>🌐1</sub> {data-y=2018}       | 613 |
-| 15th                      | `55` <sub style><i>⚽️</i></sub> {data-y=2017}        | 597 | `55` <sub style><i>⚽️</i><i>👟</i></sub> {data-y=2019} | 668 |
-| 16th                      | `55` <sub style>🌐4</sub> {data-y=2018}              | 652 | 36                                                     | 704 |
-| 17th                      | 34                                                   | 686 | `39` <sub style><i>⚽️</i></sub> {data-y=2021}          | 743 |
-| 18th                      | `51`                                                 | 737 | 20 <sub style>🌐7</sub> {data-y=2022}                  | 763 |
-| 19th                      | `39`                                                 | 776 | `39` <sub style><i>⚽️</i></sub> {data-y=2023}          | 802 |
-| 20th                      | `37`                                                 | 813 | 19                                                     | 821 |
-| 21st                      | 20 <sub style>🌐1</sub> {data-y=2022}                | 833 | `29`                                                   | 850 |
-| 22nd                      | `60`                                                 | 893 | 46 <sub style>🌐6</sub> {data-y=2026}                  | 896 |
-| 23rd                      | `42`                                                 | 935 | 21                                                     | 917 |
-| 24th                      | `38` <sub style>🌐2</sub> {data-y=2026}              | 973 |
-| 25th                      | `2`                                                  | 975 |
+| Player                    | Cristiano <br>Ronaldo                              |     | Lionel <br>Messi                                   |     | Kylian <br>Mbappé                            |     | Erling <br>Haaland                         |     | Lamine <br>Yamal                                   |     |
+| ------------------------- | -------------------------------------------------- | --- | -------------------------------------------------- | --- | -------------------------------------------- | --- | ------------------------------------------ | --- | -------------------------------------------------- | --- |
+| Country #                 | 🇵🇹 #7                                              |     | 🇦🇷 #10                                             |     | 🇫🇷 #10                                       |     | 🇳🇴 #9                                      |     | 🇪🇸 #19                                             |     |
+| Goals {#row-goals}        | `975` <sub style>~42/y</sub>                       |     | 917 <sub style>~44/y</sub>                         |     | 431 <sub style>~43/y</sub>                   |     | 357 <sub style>~40/y</sub>                 |     | 56 <sub style>~28/y</sub>                          |     |
+| Years played              | 23 <sub style>2002–present</sub>                   |     | 21 <sub style>2005–present</sub>                   |     | 10 <sub style>2016–present</sub>             |     | 9 <sub style>2017–present</sub>            |     | 2 <sub style>2023–present</sub>                    |     |
+| World Cup goals           | 🌐10                                               |     | `🌐19`                                             |     | `🌐18`                                       |     | 🌐5                                        |     | 🌐1                                                |     |
+| World Cups won            | — <sub style>of 6</sub>                            |     | `🏆1` <sub style>of 6</sub>                        |     | `🏆1` <sub style>of 3</sub>                  |     | — <sub style>of 1</sub>                    |     | — <sub style>of 1</sub>                            |     |
+| Golden Shoes              | <i>👟</i>4                                         |     | <code><i>👟</i>6</code>                            |     | <i>👟</i>1                                   |     | <i>👟</i>1                                 |     | —                                                  |     |
+| Ballons d'Or              | <i>⚽️</i>5                                         |     | <code><i>⚽️</i>8</code>                            |     | —                                            |     | —                                          |     | —                                                  |     |
+| 1st goal                  | 17y 8m <sub style>Sporting vs<br> Moreirense</sub> |     | 17y 10m <sub style>Barcelona <br>vs Albacete</sub> |     | 17y 2m <sub style>Monaco <br>vs Troyes</sub> |     | 16y 9m <sub style>Molde <br>vs Volda</sub> |     | `16y 2m` <sub style>Barcelona <br>vs Granada</sub> |     |
+| By season: {#row-seasons} |                                                    |     |                                                    |     |                                              |     |                                            |     |                                                    |     |
+| 1st                       | 5 {data-y=2002}                                    | 5   | 1 {data-y=2004}                                    | 1   | 1 {data-y=2015}                              | 1   | 4 {data-y=2016}                            | 4   | `9` {data-y=2023}                                  | 9   |
+| 2nd                       | 6                                                  | 11  | 8 _🌐1_ {data-y=2006}                              | 9   | `26`                                         | 27  | 17                                         | 21  | 19                                                 | 28  |
+| 3rd                       | 16                                                 | 27  | 19                                                 | 28  | 22 _🌐4_ {data-y=2018}                       | 49  | `44`                                       | 65  | 27 _🌐1_ {data-y=2026}                             | 55  |
+| 4th                       | 14 _🌐1_ {data-y=2006}                             | 41  | 22                                                 | 50  | `48`                                         | 97  | `47`                                       | 112 | 1                                                  | 56  |
+| 5th                       | 29                                                 | 70  | `40` _**⚽️**_ {data-y=2009}                        | 90  | 33                                           | 130 | 35                                         | 147 |
+| 6th                       | 47 _**⚽️👟**_ {data-y=2008}                        | 117 | 50 _**⚽️👟**_ {data-y=2010}                        | 140 | 45                                           | 175 | `61`                                       | 208 |
+| 7th                       | 27                                                 | 144 | `55` _**⚽️**_ {data-y=2011}                        | 195 | 47 _🌐8_ {data-y=2022}                       | 222 | 44 _**👟**_ {data-y=2023}                  | 252 |
+| 8th                       | 34 _🌐1_ {data-y=2010}                             | 178 | `77` _**⚽️👟**_ {data-y=2012}                      | 272 | 53                                           | 275 | 45                                         | 297 |
+| 9th                       | 56 _**👟**_ {data-y=2011}                          | 234 | `72` _**👟**_ {data-y=2013}                        | 344 | 54                                           | 329 | 55                                         | 352 |
+| 10th                      | `67`                                               | 301 | 47 _🌐4_ {data-y=2014}                             | 391 | 46 _**👟**_ {data-y=2025}                    | 375 | 5 _🌐5_ {data-y=2026}                      | 357 |
+| 11th                      | `60` _**⚽️**_ {data-y=2013}                        | 361 | `66` _**⚽️**_ {data-y=2015}                        | 457 | 49 _🌐6_ {data-y=2026}                       | 424 |
+| 12th                      | `61` _**⚽️👟**🌐1_ {data-y=2014}                   | 422 | 45                                                 | 502 | 7                                            | 431 |
+| 13th                      | `66` _**👟**_ {data-y=2015}                        | 488 | `62` _**👟**_ {data-y=2017}                        | 564 |
+| 14th                      | `54` _**⚽️**_ {data-y=2016}                        | 542 | `49` _**👟**🌐1_ {data-y=2018}                     | 613 |
+| 15th                      | `55` _**⚽️**_ {data-y=2017}                        | 597 | `55` _**⚽️👟**_ {data-y=2019}                      | 668 |
+| 16th                      | `55` _🌐4_ {data-y=2018}                           | 652 | 36                                                 | 704 |
+| 17th                      | 34                                                 | 686 | `39` _**⚽️**_ {data-y=2021}                        | 743 |
+| 18th                      | `51`                                               | 737 | 20 _🌐7_ {data-y=2022}                             | 763 |
+| 19th                      | `39`                                               | 776 | `39` _**⚽️**_ {data-y=2023}                        | 802 |
+| 20th                      | `37`                                               | 813 | 19                                                 | 821 |
+| 21st                      | 20 _🌐1_ {data-y=2022}                             | 833 | `29`                                               | 850 |
+| 22nd                      | `60`                                               | 893 | 46 _🌐6_ {data-y=2026}                             | 896 |
+| 23rd                      | `42`                                               | 935 | 21                                                 | 917 |
+| 24th                      | `38` _🌐2_ {data-y=2026}                           | 973 |
+| 25th                      | `2`                                                | 975 |
 
 {.striped}
 
@@ -54,16 +54,22 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
       &:nth-child(2n+3) {
         @media (width < 768px) { display: none }
       }
-      > em {
-        font-style: normal;
-        display: block;
-        font-size: smaller;
-        em {
-          font-style: normal;
-          /* filter: sepia(1) saturate(10) hue-rotate(10deg) brightness(1.2); */
-          filter: sepia(1) saturate(8) hue-rotate(-5deg) brightness(0.85) contrast(1.4);
-        }
-      }
+    }
+    [data-y]::before {
+      content: attr(data-y) ":";
+      float: left;
+      font-size: 50%;
+      opacity: 50%;
+    }
+    em {
+      font-style: normal;
+      display: block;
+      font-size: smaller;
+    }
+    strong {
+      font-style: normal;
+      /* filter: sepia(1) saturate(10) hue-rotate(10deg) brightness(1.2); */
+      filter: sepia(1) saturate(8) hue-rotate(-5deg) brightness(0.85) contrast(1.4);
     }
     code {
       display: inline;
@@ -72,12 +78,6 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
       background: var(--pico-mark-background-color);
       color: var(--pico-mark-color);
       font: inherit;
-    }
-    [data-y]::before {
-      content: attr(data-y) ":";
-      float: left;
-      font-size: 50%;
-      opacity: 50%;
     }
     /* Header only */
     thead {
