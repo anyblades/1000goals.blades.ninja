@@ -52,11 +52,11 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
   table {
     th, td {
       text-align: center;
-      vertical-align: middle;
     }
     tr:has(td.div) {
       font-size: smaller;
       opacity: 50%;
+      td:not(:first-child)::before { content: "= " }
     }
     code {
       display: inline;
