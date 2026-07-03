@@ -9,8 +9,8 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
 | Player                    | Cristiano <br>Ronaldo               | Lionel <br>Messi                    | Kylian <br>Mbappé             | Erling <br>Haaland          | Lamine <br>Yamal                    |
 | ------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------- | --------------------------- | ----------------------------------- |
 | Country #                 | 🇵🇹 #7                               | 🇦🇷 #10                              | 🇫🇷 #10                        | 🇳🇴 #9                       | 🇪🇸 #19                              |
-| Goals {#row-goals}        | `975` _~41/y_                       | 917 _~42/y_                         | 431 _~39/y_                   | 357 _~40/y_                 | 56 _~19/y_                          |
-| World Cup goals           | 🌐10                                | `🌐19`                              | `🌐18`                        | 🌐5                         | 🌐1                                 |
+| Goals {#row-goals}        | `976` _~41/y_                       | 917 _~42/y_                         | 431 _~39/y_                   | 357 _~40/y_                 | 56 _~19/y_                          |
+| World Cup goals           | 🌐11                                | `🌐19`                              | `🌐18`                        | 🌐5                         | 🌐1                                 |
 | World Cups won            | — _of 6_                            | <code>🏆**1**</code> _of 6_         | <code>🏆**1**</code> _of 3_   | — _of 1_                    | — _of 1_                            |
 | Golden Shoes              | **👟4**                             | <code>**👟6**</code>                | **👟1**                       | **👟1**                     | —                                   |
 | Ballons d'Or              | **⚽️5**                             | <code>**⚽️8**</code>                | —                             | —                           | —                                   |
@@ -41,7 +41,7 @@ title: <sup style>All-time</sup> Top football players <sub style>by goals scored
 | 22nd                      | `60` _'23/24 ∑=893_                 | 46 _'25 ∑=896_                      |                               |                             |                                     |
 | 23rd                      | `42` _'24/25 ∑=935_                 | 21 _'26 ∑=917_ 🌐6                  |                               |                             |                                     |
 | 24th                      | `38` _'25/26 ∑=973_                 |                                     |                               |                             |                                     |
-| 25th                      | `2` _'26/27 ∑=975_ 🌐2              |                                     |                               |                             |                                     |
+| 25th                      | `3` _'26/27 ∑=976_ 🌐3              |                                     |                               |                             |                                     |
 
 {.striped}
 
