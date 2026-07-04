@@ -48,9 +48,15 @@ title: <sup style>All-time</sup> Top football goalscorers <sub style>and runners
 
 <style>
   table {
+    display: table !important;
+    border-collapse: separate;
     /* [CORE] Table styles */
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
     th, td {
-      position: relative;
       text-align: center;
       &:first-child { text-align: left }
     }
