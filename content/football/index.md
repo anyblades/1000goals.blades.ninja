@@ -66,15 +66,14 @@ title: <sup style>2026</sup> Top football g<i>o</i>alscorers <sub style>and thei
     @media (width >= 1024px) { font-size: 125% }
     /* [CORE] Table styles */
     th, td {
-      text-align: center;
-      &:first-child { text-align: left }
+      padding-inline: calc(var(--pico-spacing) / 4);
+      &:not(:first-child) { text-align: center; text-wrap: nowrap }
     }
     /* [CORE] Sub-line helper */
     em {
       display: block;
       font-style: normal;
       font-size: 50%;
-      text-wrap: nowrap;
       opacity: 50%;
     }
     /* [CORE] Highlighter helper */
@@ -93,11 +92,7 @@ title: <sup style>2026</sup> Top football g<i>o</i>alscorers <sub style>and thei
       filter: sepia(1) saturate(8) hue-rotate(-5deg) brightness(0.85) contrast(1.4);
     }
     /* [NICE] Sticky headers */
-    thead {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
+    thead { position: sticky; top: 0; z-index: 999 }
     /* [NICE] Subtotals */
     tr:has([class^="vs-"]) td {
       border-style: solid;
