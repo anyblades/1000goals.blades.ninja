@@ -19,11 +19,12 @@ title: <sup style>2026</sup> Top football g<b data-i="⚽️"><b>o</b></b>alscor
     border-collapse: separate;
     @media (width >= 1024px) { font-size: 125% }
     th, td {
+      min-width: 6ch;
       padding-inline: calc(var(--pico-spacing) / 4);
       &:first-child {
-        font-size: 75%;
-        opacity: 75%;
+        padding-left: calc(var(--pico-spacing) / 2);
         vertical-align: middle;
+        font-size: 75%; opacity: 75%;
         &::after { content: ":"; vertical-align: baseline }
       }
       &:not(:first-child) { text-align: center; text-wrap: nowrap }
@@ -118,14 +119,14 @@ title: <sup style>2026</sup> Top football g<b data-i="⚽️"><b>o</b></b>alscor
     }
     /* [NICE] Subtotals */
     tr:has([class^="vs-"]) td {
-      border-style: solid;
-      border-width: 1px 0;
+      border-width: 1px 0; border-style: solid;
       &:first-child {
-        min-width: 20ch;
-        &::before { content: "= SUBTOTALS ="; display: block; font-weight: bold }
-        font-size: 50%;
+        &::before {
+          content: "= SUBTOTALS ="; display: block; text-wrap: nowrap;
+          font-weight: bold; letter-spacing: 1px;
+        }
         border-left-width: 1px;
-        opacity: 100% !important;
+        font-size: 50%; opacity: 100% !important;
       }
       &[class^="vs-"] {
         border-right-width: 1px;
