@@ -1,6 +1,6 @@
 ---
-title: The Race for <mark>1000 Goals</mark> <sub style>as of July 5, 2026</sub>
-description: Tracking the top goalscorers in football history and their runners-up.
+title: The Race for <mark>1000 Goals</mark>
+description: "Who will cross the bar of 1K goals? Tracking active football legends, rising contenders, and their historic season-by-season pace. &nbsp;<i class='faded' style='text-wrap: nowrap'>Updated: July 5, 2026</i>"
 ---
 
 ---
