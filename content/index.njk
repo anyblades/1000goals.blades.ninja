@@ -59,12 +59,9 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
   {{ '<br>_(' ~ season.notes ~ ')_' if season.notes }}
 {% endset %} {{ _ | replace('\n', ' ') | safe if season }} |{% endfor %}
 {%- if s in [3, 9, 21] %}
-| Subtotals |{% for p, totals in runn_totals %} ∑={{ totals.goals }} |{% endfor %}
+| Subtotals {.vs-} |{% for p, totals in runn_totals %} ∑={{ totals.goals }} |{% endfor %}
 {%- endif %}
 {%- endfor %}
-| `Mbappé` vs Haaland vs Ronaldo vs Messi vs Yamal | ∑=41                                            | ∑=50 <br>🌐1                              | `∑=97` <br>**🏆1**🌐4                    | ∑=65                                | ∑=55 {.vs-ly}                         |
-| `Messi` vs Ronaldo vs Mbappé vs Haaland          | ∑=301 <br>**⚽️1👟2**🌐2                         | `∑=391` <br>**⚽️4👟3🥇1**🌐5              | `∑=375` <br>**👟1🏆1**🌐12               | ∑=352 <br>**👟1** {.vs-eh}          |
-| Ronaldo vs `Messi`                               | `∑=893` <br>**⚽️5👟4**🌐8                       | `∑=896` <br>**⚽️8👟6🥇1🏆1**🌐13 {.vs-lm} |
 
 {.striped}
 {% endrenderTemplate %}
@@ -102,19 +99,9 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
     }
     /* [NICE] Subtotals */
     tr:has([class^="vs-"]) td {
-      border-width: 1px 0; border-style: solid; font-size: 75%;
-      &:first-child {
-        &::before {
-          content: "= SUBTOTALS ="; display: block; text-wrap: nowrap;
-          font-weight: bold; letter-spacing: 1px;
-        }
-        border-left-width: 1px;
-        font-size: 50%; opacity: 100% !important;
-      }
-      &[class^="vs-"] {
-        border-right-width: 1px;
-        ~ td { border: none }
-      }
+      border: 1px solid var(--pico-contrast); border-width: 1px 0; font-size: 75%;
+      &:first-child { border-left-width: 1px; opacity: 100% !important }
+      &:last-child { border-right-width: 1px }
     }
     tr:has([class="vs-ly"]) td { border-color: goldenrod }
     tr:has([class="vs-eh"]) td { border-color: red }
