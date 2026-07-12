@@ -58,6 +58,9 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
   <br><strong>{{ awards | dictsort | selectattr('1') | join('', '0') }}</strong>{{ '🌐' ~ season.metrics['🌐'] if season.metrics['🌐'] }}
   {{ '<br>_(' ~ season.notes ~ ')_' if season.notes }}
 {% endset %} {{ _ | replace('\n', ' ') | safe if season }} |{% endfor %}
+{%- if s in [3, 9, 21] %}
+| Subtotals |{% for p, totals in runn_totals %} ∑={{ totals.goals }} |{% endfor %}
+{%- endif %}
 {%- endfor %}
 | `Mbappé` vs Haaland vs Ronaldo vs Messi vs Yamal | ∑=41                                            | ∑=50 <br>🌐1                              | `∑=97` <br>**🏆1**🌐4                    | ∑=65                                | ∑=55 {.vs-ly}                         |
 | `Messi` vs Ronaldo vs Mbappé vs Haaland          | ∑=301 <br>**⚽️1👟2**🌐2                         | `∑=391` <br>**⚽️4👟3🥇1**🌐5              | `∑=375` <br>**👟1🏆1**🌐12               | ∑=352 <br>**👟1** {.vs-eh}          |
