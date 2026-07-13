@@ -10,6 +10,54 @@ title: The Race for <mark>1000 Goals</mark>
 description: "Who will cross the bar of 1K goals? Tracking active football legends, rising contenders, and their historic season-by-season performance.&nbsp; <i class='faded' style='text-wrap: nowrap'>Updated: July 9, 2026</i>"
 ---
 
+{% set runn_totals = {} %}
+<figure id="chart" class="breakout-item-max">
+  <table class="charts-css line multiple show-labels show-data-axes">
+    {% for s in range(0, player_stats[0].seasons | length) %}
+    <tr>
+      <th scope="row">{{ s + 1 }}</th>
+      {% for p in range(0, player_stats | length) %}
+      {% set totals = {} %}
+      {% for m, val in player_stats[p].seasons[s].metrics %}
+        {% set totals = totals | attr_set(m, runn_totals[p][s - 1][m] | d(0) + val) %}
+      {% endfor %}
+      {% set runn_totals = runn_totals | attr_set(p, runn_totals[p] | attr_set(s, totals) ) %}
+      {% if totals.goals %}<td style="--start: {{ runn_totals[p][s - 1].goals | d(0) / 1000 }}; --end: {{ totals.goals / 1000 }}">{{ totals.goals }}</td>{% endif %}
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+</figure>
+<br>
+<ul class="charts-css legend legend-inline legend-square">
+  {% for player in player_stats %}
+  <li>{{ player.surname }}</li>
+  {% endfor %}
+</ul>
+<style>
+  .charts-css {
+    --color-1: green;
+    --color-2: skyblue;
+    --color-3: dodgerblue;
+    --color-4: red;
+    --color-5: goldenrod;
+    th, td {
+      font-size: 25%
+    }
+    td {
+      font-weight: bold;
+      &:nth-of-type(10n+1) { --color: var(--color-1) }
+      &:nth-of-type(10n+2) { --color: var(--color-2) }
+      &:nth-of-type(10n+3) { --color: var(--color-3) }
+      &:nth-of-type(10n+4) { --color: var(--color-4) }
+      &:nth-of-type(10n+5) { --color: var(--color-5) }
+      color: var(--color);
+      @media (width < 768px) { color: transparent }
+    }
+  }
+</style>
+
+<hr>
 <style>
   /* [CORE] Table styles */
   table.striped {
@@ -34,13 +82,9 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
     }
   }
 </style>
-
-<hr>
 <figure>
   <table class="striped">
-    <thead>
-    <tr><td>Player</td>{% for player in player_stats %}<td><sup>{{ player.country }}</sup>{{ player.name }} <br>{{ player.surname }}</td>{% endfor %}</tr>
-    </thead>
+    <thead><tr><td>Player</td>{% for player in player_stats %}<td><sup>{{ player.country }}</sup>{{ player.name }} <br>{{ player.surname }}</td>{% endfor %}</tr></thead>
     <tr><td id="row-goals">Goals</td><td><code>976</code> <em>~41/year</em></td><td>919 <em>~42/year</em></td><td>433 <em>~41/year</em></td><td>359 <em>~36/year</em></td><td>56 <em>~18/year</em></td></tr>
     <tr><td>World&nbsp;Cup goals</td><td>🌐11</td><td><code>🌐21</code></td><td><code>🌐20</code></td><td>🌐7</td><td>🌐1</td></tr>
     <tr><td>World&nbsp;Cups won</td><td>— <em>of 6</em></td><td><code><strong>🏆1</strong></code> <em>of 6</em></td><td><code><strong>🏆1</strong></code> <em>of 3</em></td><td>— <em>of 1</em></td><td>— <em>of 1</em></td></tr>
@@ -50,20 +94,14 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
     <tr><td>Debut age</td><td>17y 6m <em>Sporting vs Inter<br>'02/03</em></td><td>17y 3m <em>Barça vs Espanyol<br>'04/05</em></td><td>16y 11m <em>Monaco vs Caen<br>'15/16</em></td><td><code>15y 9m</code> <em>Bryne vs Ranheim<br>2016</em></td><td><code>15y 9m</code> <em>Barça vs Betis<br>'22/23</em></td></tr>
     <tr><td>1st goal</td><td>17y 8m <em>Sporting vs Moreirense<br>'02/03</em></td><td>17y 10m <em>Barça vs Albacete<br>'04/05</em></td><td>17y 2m <em>Monaco vs Troyes<br>'15/16</em></td><td><code>16y 9m</code> <em>Molde vs Volda<br>2017</em></td><td><code>16y 2m</code> <em>Barça vs Granada<br>'23/24</em></td></tr>
     <tr><td id="row-seasons">Seasons played</td><td><code>23.9</code> <em>'02/03–present</em></td><td>21.7 <em>'04/05–present</em></td><td>10.6 <em>'15/16–present</em></td><td>10.1 <em>2016–present</em></td><td>3.2 <em>'22/23–present</em></td></tr>
-    {% set runn_totals = {} %}
     {% for s in range(0, player_stats[0].seasons | length) %}
     <tr>
       <td>Season {{ s + 1 }}</td>
       {% for p in range(0, player_stats | length) %}
       {% set season = player_stats[p].seasons[s] %}
-      {% set totals = {} %}
-      {% for m, val in season.metrics %}
-        {% set totals = totals | attr_set(m, runn_totals[p][s - 1][m] | d(0) + val) %}
-      {% endfor %}
-      {% set runn_totals = runn_totals | attr_set(p, runn_totals[p] | attr_set(s, totals) ) %}
       {% if season %}
       <td>
-        <em>{{ season.year }}</em> {{ season.metrics.goals }} {% if totals.goals %}<em>∑={{ totals.goals }}</em>{% endif %}
+        <em>{{ season.year }}</em> {{ season.metrics.goals }} {% if runn_totals[p][s].goals %}<em>∑={{ runn_totals[p][s].goals }}</em>{% endif %}
         {% set awards = season.metrics | attr_set('goals', false) | attr_set('🌐', false) %}
         <br><strong>{{ awards | dictsort | selectattr('1') | join('', '0') }}</strong>{{ '🌐' ~ season.metrics['🌐'] if season.metrics['🌐'] }}
         {% if season.notes %}<br><em>({{ season.notes }})</em>{% endif %}
@@ -75,37 +113,15 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
     <tr>
       <td class="vs-">Subtotals</td>
       {% for p in range(0, player_stats | length) %}
-      <td>
-        {% if player_stats[p].seasons[s] %}
-        ∑={{ runn_totals[p][s].goals }}
-        {% else %}<em>(not reached)</em>{% endif %}
-      </td>
+      {% if player_stats[p].seasons[s] %}
+      <td>∑={{ runn_totals[p][s].goals }}</td>
+      {% endif %}
       {% endfor %}
     </tr>
     {% endif %}
     {% endfor %}
   </table>
 </figure>
-
-<figure id="chart" class="breakout-item-max">
-  <table class="charts-css line multiple show-labels show-data-axes">
-    {% for s in range(0, player_stats[0].seasons | length) %}
-    <tr>
-      <th scope="row">{{ s + 1 }}</th>
-      {% for p in range(0, player_stats | length) %}
-      {% if runn_totals[p][s].goals %}<td style="--start: {{ runn_totals[p][s - 1].goals | d(0) / 1000 }}; --end: {{ runn_totals[p][s].goals / 1000 }}">{{ runn_totals[p][s].goals }}</td>{% endif %}
-      {% endfor %}
-    </tr>
-    {% endfor %}
-  </table>
-</figure>
-<br>
-<ul class="charts-css legend legend-inline legend-square">
-  {% for p in range(0, player_stats | length) %}
-  <li>{{ player_stats[p].surname }}</li>
-  {% endfor %}
-</ul>
-
 <style>
   table.striped {
     /* [CORE] Sub-line helper */
@@ -141,26 +157,6 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
       border: 1px solid var(--pico-contrast); border-width: 1px 0; font-size: 75%;
       &:first-child { border-left-width: 1px; opacity: 100% !important }
       &:last-child { border-right-width: 1px }
-    }
-  }
-  .charts-css {
-    --color-1: green;
-    --color-2: skyblue;
-    --color-3: dodgerblue;
-    --color-4: red;
-    --color-5: goldenrod;
-    th, td {
-      font-size: 25%
-    }
-    td {
-      font-weight: bold;
-      &:nth-of-type(10n+1) { --color: var(--color-1) }
-      &:nth-of-type(10n+2) { --color: var(--color-2) }
-      &:nth-of-type(10n+3) { --color: var(--color-3) }
-      &:nth-of-type(10n+4) { --color: var(--color-4) }
-      &:nth-of-type(10n+5) { --color: var(--color-5) }
-      color: var(--color);
-      @media (width < 768px) { color: transparent }
     }
   }
 </style>
