@@ -73,7 +73,7 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
 </figure>
 
 <figure id="chart" class="breakout-item-max">
-  <table class="charts-css line multiple show-primary-axis show-4-secondary-axes show-data-axes">
+  <table class="charts-css line multiple show-labels show-data-axes">
     {%- for s in range(0, player_stats[0].seasons | length) %}
     <tr>
       <th scope="row">{{ s + 1 }}</th>
@@ -85,7 +85,7 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
   </table>
 </figure>
 <br>
-<ul class="charts-css legend legend-square">
+<ul class="charts-css legend legend-inline legend-square">
   {%- for p in range(0, player_stats | length) %}
   <li>{{ player_stats[p].surname }}</li>
   {%- endfor %}
@@ -135,8 +135,8 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
     --color-3: dodgerblue;
     --color-4: red;
     --color-5: goldenrod;
+    th, td { font-size: 25% }
     td {
-      font-size: 25%;
       &:nth-of-type(10n+1) { --color: var(--color-1) }
       &:nth-of-type(10n+2) { --color: var(--color-2) }
       &:nth-of-type(10n+3) { --color: var(--color-3) }
