@@ -10,9 +10,20 @@ title: The Race for <mark>1000 Goals</mark>
 description: "Who will cross the bar of 1K goals? Tracking active football legends, rising contenders, and their historic season-by-season performance.&nbsp; <i class='faded' style='text-wrap: nowrap'>Updated: July 9, 2026</i>"
 ---
 
-{% set runn_totals = {} %}
+<style>
+  #chart {
+    position: relative;
+    .legend {
+      position: absolute;
+      bottom: 1rem; right: 0;
+      width: auto; height: auto;
+      font-size: 50%; border: none;
+    }
+  }
+</style>
 <figure id="chart" class="breakout-item-max">
   <table class="charts-css line multiple show-labels show-data-axes">
+    {% set runn_totals = {} %}
     {% for s in range(0, player_stats[0].seasons | length) %}
     <tr>
       <th scope="row">{{ s + 1 }}</th>
@@ -22,18 +33,19 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
         {% set totals = totals | attr_set(m, runn_totals[p][s - 1][m] | d(0) + val) %}
       {% endfor %}
       {% set runn_totals = runn_totals | attr_set(p, runn_totals[p] | attr_set(s, totals) ) %}
-      {% if totals.goals %}<td style="--start: {{ runn_totals[p][s - 1].goals | d(0) / 1000 }}; --end: {{ totals.goals / 1000 }}">{{ totals.goals }}</td>{% endif %}
+      {% if totals.goals %}
+      <td style="--start: {{ runn_totals[p][s - 1].goals | d(0) / 1000 }}; --end: {{ totals.goals / 1000 }}">{{ totals.goals }}</td>
+      {% endif %}
       {% endfor %}
     </tr>
     {% endfor %}
   </table>
+  <ul class="charts-css legend legend-square">
+    {% for player in player_stats %}
+    <li>{{ player.surname }}</li>
+    {% endfor %}
+  </ul>
 </figure>
-<br>
-<ul class="charts-css legend legend-inline legend-square">
-  {% for player in player_stats %}
-  <li>{{ player.surname }}</li>
-  {% endfor %}
-</ul>
 <style>
   .charts-css {
     --color-1: green;
