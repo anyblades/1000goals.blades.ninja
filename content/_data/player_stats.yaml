@@ -228,6 +228,7 @@
     - year: "'22/23"
       metrics:
         goals: 53
+        🥾: true
         🌐: 8
     - year: "'23/24"
       metrics:
@@ -242,6 +243,7 @@
     - year: "'26/27"
       metrics:
         goals: 11
+        🥾: true
         🌐: 10
       notes: current season
     - year: "'27/28"
