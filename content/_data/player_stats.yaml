@@ -327,6 +327,7 @@
     - year: "'26/27"
       metrics:
         goals: 1
+        🏆: true
         🌐: 1
     - year: "'27/28"
       metrics: {}
