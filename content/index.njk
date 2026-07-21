@@ -8,7 +8,7 @@ site:
     - https://cdn.jsdelivr.net/npm/charts.css@1/dist/charts.min.css
 title: The Race for <mark>1000 Goals</mark>
 description: "Who will cross the bar of 1K goals? Tracking active football legends, rising contenders, and their historic season-by-season performance.&nbsp; <i class='faded' style='text-wrap: nowrap'>Updated: July 20, 2026</i>"
-TRAIL_SIZE: 3
+TRAIL_SIZE: 4
 ---
 
 {% set totals = {} %}
@@ -55,8 +55,8 @@ TRAIL_SIZE: 3
 <style>
   .charts-css {
     --color-1: green;
-    --color-2: skyblue;
-    --color-3: dodgerblue;
+    --color-2: deepskyblue;
+    --color-3: royalblue;
     --color-4: red;
     --color-5: goldenrod;
     font-size: 50%;
@@ -68,13 +68,12 @@ TRAIL_SIZE: 3
       &:nth-of-type(10n+5) { --color: var(--color-5) }
       color: var(--color);
 
-      --opacity: calc(40% + 7.5% * pow(2, var(--trail, 0) ) );
-      &::before { opacity: var(--opacity) }
       .data {
-        text-wrap: nowrap;
-        -webkit-text-stroke: 0.25ch black; paint-order: stroke fill;
-        &.show { opacity: var(--opacity) }
+        text-wrap: nowrap; font-weight: 900;
+        -webkit-text-stroke: 0.25ch var(--pico-contrast-inverse); paint-order: stroke fill;
       }
+      .data.show,
+      &::before { opacity: calc(40% + 7.5% * pow(2, var(--trail, 0) ) ) }
     }
   }
   #chart {
