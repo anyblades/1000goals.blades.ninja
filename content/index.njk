@@ -25,7 +25,7 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
     {% endif %}
   {% endfor %}
   {% for p, goals in player_goals | dictsort | sort(attribute=1) %}
-    {% set s_ranks = s_ranks | attr_set(s, s_ranks[s] | attr_set(p, loop.index0 / (player_goals | length - 1) ) ) %}
+    {% set s_ranks = s_ranks | attr_set(s, s_ranks[s] | attr_set(p, loop.index / player_goals | length ) ) %}
   {% endfor %}
 {% endfor %}
 
@@ -36,9 +36,9 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
       <th scope="row">{{ s + 1 }}</th>
       {% for p in range(0, player_stats | length) %}
       {% if totals[p][s] %}
-      {% set trail = s - (totals[p] | length - 1) + 3 %}
+      {% set trail = s - (totals[p] | length - 1) + 4 %}
       <td style="--start: {{ totals[p][s - 1].goals | d(0) / 1000 }}; --end: {{ totals[p][s].goals / 1000 }}; {{ '--trail: ' ~ trail if trail > 0 }}">
-        <b class="data" style="opacity: {{ '100%' if trail == 3 }}; transform: translateY({{ 3 * (0.5 - s_ranks[s][p]) + 1 }}em)">{{ totals[p][s].goals }}</b>
+        <b class="data" style="opacity: {{ '100%' if s_ranks[s][p] == 1 or trail == 4 }}; transform: translateY({{ 1 - 4 * (s_ranks[s][p] - 0.7) }}em)">{{ totals[p][s].goals }}</b>
       </td>
       {% endif %}
       {% endfor %}
