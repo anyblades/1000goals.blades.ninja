@@ -62,7 +62,11 @@ description: "Who will cross the bar of 1K goals? Tracking active football legen
       &:nth-of-type(10n+5) { --color: var(--color-5) }
       color: var(--color);
       &::before { opacity: calc(40% + 7.5% * pow(2, var(--trail, 0) ) ) }
-      .data { text-wrap: nowrap; transform: none !important; background: black; padding-inline: 0.5ch }
+      .data {
+        text-wrap: nowrap;
+        transform: rotate(-30deg) translateY(0.5em) !important; transform-origin: right bottom;
+        -webkit-text-stroke: 0.25ch black; paint-order: stroke fill;
+      }
     }
   }
   #chart {
